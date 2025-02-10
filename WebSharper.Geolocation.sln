@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.Geolocation", "WebSharper.Geolocation\WebSharper.Geolocation.fsproj", "{12FC4C09-7E7E-4A64-B035-EDF99138BEFC}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.Geolocation.Sample", "WebSharper.Geolocation.Sample\WebSharper.Geolocation.Sample.fsproj", "{C66843B6-851F-4038-B14B-0BC834456DB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{12FC4C09-7E7E-4A64-B035-EDF99138BEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12FC4C09-7E7E-4A64-B035-EDF99138BEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12FC4C09-7E7E-4A64-B035-EDF99138BEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66843B6-851F-4038-B14B-0BC834456DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66843B6-851F-4038-B14B-0BC834456DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66843B6-851F-4038-B14B-0BC834456DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66843B6-851F-4038-B14B-0BC834456DB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
