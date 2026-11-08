@@ -1,0 +1,20 @@
+type file
+id WebSharper.Geolocation
+authors
+    IntelliFactory
+owners
+    IntelliFactory
+repositoryType git
+repositoryUrl https://github.com/dotnet-websharper/Geolocation/
+licenseUrl https://github.com/dotnet-websharper/Geolocation/blob/main/LICENSE.md
+iconUrl https://github.com/dotnet-websharper/core/raw/websharper50/tools/WebSharper.png
+projectUrl https://github.com/dotnet-websharper/Geolocation
+description
+    WebSharper bindings for Geolocation
+tags
+    Web JavaScript F# C#
+files
+    ../WebSharper.Geolocation/bin/Release/netstandard2.0/WebSharper.Geolocation.dll ==> lib/netstandard2.0
+    ../WebSharper.Geolocation/bin/Release/netstandard2.0/WebSharper.Geolocation.xml ==> lib/netstandard2.0
+dependencies
+        WebSharper ~> LOCKEDVERSION:[3]
