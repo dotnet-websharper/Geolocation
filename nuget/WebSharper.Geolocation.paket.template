@@ -15,6 +15,7 @@ tags
     Web JavaScript F# C#
 files
     ../WebSharper.Geolocation/bin/Release/netstandard2.0/WebSharper.Geolocation.dll ==> lib/netstandard2.0
+    ../WebSharper.Geolocation/bin/Release/netstandard2.0/WebSharper.Geolocation.websharper ==> lib/netstandard2.0
     ../WebSharper.Geolocation/bin/Release/netstandard2.0/WebSharper.Geolocation.xml ==> lib/netstandard2.0
 dependencies
         WebSharper ~> LOCKEDVERSION:[3]
