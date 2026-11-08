@@ -1,23 +1,41 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Geolocation API Example</title>
+    <title>WebSharper Geolocation API Demo</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%234f46e5'/%3E%3Cpath d='M8 2.5c-2.2 0-4 1.8-4 4 0 3 4 7 4 7s4-4 4-7c0-2.2-1.8-4-4-4zm0 5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z' fill='white'/%3E%3C/svg%3E" />
     <link rel="stylesheet" type="text/css" href="Content/WebSharper.Geolocation.Sample.css" />
-    <style>
-        /* Don't show the not-yet-loaded templates */
-        [ws-template], [ws-children-template] { display: none; }
-    </style>
-    <script type="text/javascript" src="Content/WebSharper.Geolocation.Sample.head.js"></script>
+    <link rel="stylesheet" type="text/css" href="site.css" />
+    <script type="module" src="Content/WebSharper.Geolocation.Sample.head.js"></script>
 </head>
 <body>
-    <h1>Geolocation API Demo</h1>
-    <div id="main" ws-children-template="Main">
-        <button ws-onclick="getLocation">Get My Location</button>
-        <p id="status">${status}</p>
-        <p id="location">${location}</p>
-    </div>
-    <script type="text/javascript" src="Content/WebSharper.Geolocation.Sample.min.js"></script>
+    <main class="page">
+        <header class="hero">
+            <h1>Geolocation API Demo</h1>
+            <p class="lede">
+                Request the current position with the
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API" target="_blank" rel="noreferrer">Geolocation API</a>.
+                The page must run in a secure context (HTTPS or localhost), and the browser will ask for permission.
+            </p>
+        </header>
+
+        <section class="card">
+            <h2>Current position</h2>
+            <p class="hint">Uses <code>navigator.geolocation.getCurrentPosition()</code>.</p>
+            <div class="actions">
+                <button class="btn btn-primary" ws-onclick="getLocation">Get my location</button>
+            </div>
+            <p class="status" role="status">${status}</p>
+            <dl class="readout">
+                <dt>Latitude</dt><dd>${latitude}</dd>
+                <dt>Longitude</dt><dd>${longitude}</dd>
+                <dt>Accuracy</dt><dd>${accuracy} m</dd>
+                <dt>Altitude</dt><dd>${altitude} m</dd>
+                <dt>Timestamp</dt><dd>${timestamp}</dd>
+            </dl>
+        </section>
+    </main>
+    <script type="module" src="Content/WebSharper.Geolocation.Sample.min.js"></script>
 </body>
 </html>
