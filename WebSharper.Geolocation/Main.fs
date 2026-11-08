@@ -42,6 +42,9 @@ module Definition =
     let GeolocationPositionError = 
         Class "GeolocationPositionError"
         |+> Instance [
+            "PERMISSION_DENIED" =? T<int>
+            "POSITION_UNAVAILABLE" =? T<int>
+            "TIMEOUT" =? T<int>
             "code" =? T<int>
             "message" =? T<string>
         ]
